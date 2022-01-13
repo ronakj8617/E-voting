@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <com.amar.library.ui.StickyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:stickyHeader="@id/ll1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/app_iconn" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_linear_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_100sdp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Sign Up"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_40sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll1"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/registration_linear_layout"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:riv_border_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/epic1"
+                        app:civ_border_width="@dimen/_3sdp"
+                        app:riv_border_color="@color/blue"
+
+                        android:id="@+id/pic"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:src="@mipmap/epic" />
+
+                        <EditText
+                            android:id="@+id/epic"
+                            android:layout_width="@dimen/_230sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:singleLine="true"
+                            android:hint="EPIC Number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/password" />
+
+                            <EditText
+                                android:id="@+id/pw"
+                                android:layout_width="@dimen/_230sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:singleLine="true"
+
+                                android:hint="Password"
+                                android:inputType="textPassword" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_40sdp"
+                                android:src="@mipmap/password" />
+
+                            <EditText
+                                android:id="@+id/cpw"
+                                android:layout_width="@dimen/_230sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:hint="Confirm Password"
+                                android:singleLine="true"
+
+                                android:inputType="textPassword" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/user" />
+
+                            <EditText
+                                android:id="@+id/name"
+                                android:layout_width="@dimen/_230sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:singleLine="true"
+
+                                android:hint="Name"
+                                android:inputType="text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/dob" />
+
+                            <EditText
+                                android:id="@+id/dob"
+                                android:layout_width="@dimen/_230sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:singleLine="true"
+
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:hint="Date of Birth(DD/MM/YYYY)"
+                                android:inputType="date" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/mobile" />
+
+                            <EditText
+                                android:id="@+id/mob"
+                                android:layout_width="@dimen/_230sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:singleLine="true"
+
+                                android:hint="Mobile Number"
+                                android:inputType="number|phone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/email" />
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="@dimen/_230sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:singleLine="true"
+
+                                android:hint="E-mail ID "
+                                android:inputType="textEmailAddress" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/home" />
+
+                            <EditText
+                                android:id="@+id/addr"
+                                android:layout_width="@dimen/_230sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:singleLine="true"
+
+                                android:hint="Address "
+                                android:inputType="textEmailAddress" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/home" />
+
+                            <Spinner
+                                android:id="@+id/state"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/home" />
+
+                            <Spinner
+                                android:id="@+id/parliament"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/home" />
+
+                            <Spinner
+                                android:id="@+id/assembly"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/home" />
+
+                            <Spinner
+                                android:id="@+id/local"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:src="@mipmap/gender" />
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <RadioGroup
+                                        android:id="@+id/rbg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_30sdp">
+                                    <RadioButton
+                                        android:id="@+id/rb1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_30sdp"
+                                        android:text="Male"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <RadioButton
+                                        android:id="@+id/rb2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_30sdp"
+                                        android:text="Female"
+                                        android:textSize="@dimen/_13sdp" />
+                                    </RadioGroup>
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_below="@+id/ll2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/signup"
+                            android:layout_width="@dimen/_160sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginBottom="0dp"
+                            android:background="#fff"
+                            android:gravity="bottom"
+                            android:text="Sign Up"
+                            android:textAlignment="center"
+                            android:textColor="#2437F1"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Button
+                            android:id="@+id/signin"
+                            android:layout_width="@dimen/_160sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginBottom="0dp"
+                            android:background="#2437F1"
+                            android:gravity="bottom"
+                            android:text="Login"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/_15sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </com.amar.library.ui.StickyScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eligibility">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_rectangle_layout"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:background="@drawable/border_textview"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/_60sdp"
+               android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/epic"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/border_textview"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_8sdp"
+           android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/DOB"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/border_textview"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_8sdp"
+           android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/pl_const"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/border_textview"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_8sdp"
+           android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/asmbly_const"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/border_textview"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_8sdp"
+           android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/local_const"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:scrollbars="horizontal"
+            android:maxWidth="@dimen/_550sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+
+            android:background="@drawable/border_textview"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_10sdp"
+           android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/allowed"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/border_textview"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <Button
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:text="Close"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/close"
+
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/close"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

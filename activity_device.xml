@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".Device" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/lblTitle"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/app_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/imgFinger"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/imagefinger"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/finger" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnInit"
+                        style="@style/buttonbig2"
+                        android:background="@drawable/button"
+                        android:onClick="onControlClicked"
+                        android:text="@string/Init" />
+
+                    <Button
+                        android:id="@+id/btnUninit"
+                        style="@style/buttonbig2"
+                        android:background="@drawable/button"
+                        android:onClick="onControlClicked"
+                        android:text="@string/UnInit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnSyncCapture"
+                        style="@style/buttonbig2"
+                        android:background="@drawable/button"
+                        android:onClick="onControlClicked"
+                        android:text="@string/SyncCapture" />
+
+                    <Button
+                        android:id="@+id/btnStopCapture"
+                        style="@style/buttonbig2"
+                        android:background="@drawable/button"
+                        android:onClick="onControlClicked"
+                        android:text="@string/StopSyncCapture" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cbFastDetection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Fast Finger Detection"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/btnMatchISOTemplate"
+                style="@style/buttonbig2"
+                android:background="@drawable/button"
+                android:visibility="invisible"
+                android:onClick="onControlClicked"
+                android:text="@string/MatchISO" />
+
+            <Button
+                android:id="@+id/btnExtractISOImage"
+                style="@style/buttonbig2"
+                android:background="@drawable/button"
+                android:visibility="invisible"
+                android:onClick="onControlClicked"
+                android:text="EXTRACT ISO" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/btnExtractAnsi"
+                style="@style/buttonbig2"
+                android:background="@drawable/button"
+                android:visibility="invisible"
+                android:onClick="onControlClicked"
+                android:text="EXTRACT ANSI" />
+
+            <Button
+                android:id="@+id/btnExtractWSQImage"
+                style="@style/buttonbig2"
+                android:visibility="invisible"
+                android:background="@drawable/button"
+                android:onClick="onControlClicked"
+                android:text="EXTRACT WSQ" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/lblMessage"
+            style="@style/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/message"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtEventLog"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:id="@+id/status"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:src="@mipmap/fingerprint"
+            />
+
+        <Button
+            android:id="@+id/match"
+            style="@style/buttonfull"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:onClick="onControlClicked"
+            android:text="match"/>
+
+         <Button
+            android:id="@+id/goback"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:onClick="onControlClicked"
+            android:text="go to votin" />
+        <Button
+            android:id="@+id/btnClearLog"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/button"
+            android:visibility="invisible"
+
+            android:text="@string/ClearLog" />
+
+    </LinearLayout>
+</LinearLayout>
+
