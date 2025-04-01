@@ -1,2 +1,1 @@
 # E-voting
- In this project we are going to develop an Android app and an Asp.Net based website. Our project is about to allow voters to cast their vote from a remote location by validating their biometric. The voters will be able to see live results on the app. The election conducting officials will add, adjourn and delete elections from the Admin Panel. Only those voters whose biometric is already registered with the system will be able to cast their vote from remote location. This system will help the government reduce capital expenditure.
